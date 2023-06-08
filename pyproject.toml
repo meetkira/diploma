@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "diploma"
+version = "0.1.0"
+description = ""
+authors = ["Ratnik Kristina <kristi.2001@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+sympy = "^1.12"
+matplotlib = "^3.7.1"
+scipy = "^1.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

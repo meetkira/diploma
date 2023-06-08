@@ -1,0 +1,12 @@
+Пусть N = x, T = y
+
+Уравнения в общем виде:
+dx/dt = -f*x + g*x*y/(h + y) - p*x*y + 1/beta
+dy/dt = -c*x*y + y*(1 - y)
+
+Линеаризуем: 
+dv1/dx = -f + g*y/(h + y) - p*y
+dv1/dy = -g*x*y/(h + y)**2 + g*x/(h + y) - p*x
+dv2/dx = -c*y
+dv2/dy = -c*x - 2*y + 1
+
