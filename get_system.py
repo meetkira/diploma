@@ -51,7 +51,6 @@ def get_general_view(file: TextIO, client: WolframClient):
 
 
 def get_system(path):
-    # AppID = "U7322V-UV2UEAAG42"
     # https://products.wolframalpha.com/simple-api/documentation
     AppID = input("Введите ID Вашего приложения в WolframAlpha: ")
     client = WolframClient(app_id=AppID)
