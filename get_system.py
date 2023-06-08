@@ -1,24 +1,10 @@
-import os.path
 from typing import TextIO
 
-import wolframalpha
 from sympy import symbols, diff
 
 from classes.system import WolframClient
 from classes.system import Equation, System, GeneralSystem
 from utils import to_file_and_console
-
-
-def connect_to_wolfram():
-    # AppID = "U7322V-UV2UEAAG42"
-    # https://products.wolframalpha.com/simple-api/documentation
-    AppID = input("Введите ID Вашего приложения в WolframAlpha: ")
-    try:
-        client = wolframalpha.Client(AppID)
-        client.query("test")
-    except Exception:
-        raise
-    return client
 
 
 def get_general_view(file: TextIO, client: WolframClient):
