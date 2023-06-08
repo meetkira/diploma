@@ -1,7 +1,5 @@
 from classes.system import System, Equation
-from get_system import get_system
 from utils import undim, to_file_and_console
-from data import data
 
 class Object:
     def __init__(self, name, data, system, path):
